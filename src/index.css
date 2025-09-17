@@ -85,8 +85,8 @@
     /* --star-shadow: rgba(108, 0, 117, 1); */
 
     
-    --meteor-from: rgba(26, 48, 102, 1);;
-    --meteor-via: rgba(26, 48, 102, 1);;
+    --meteor-from: rgba(26, 48, 102, 1);
+    --meteor-via: rgba(26, 48, 102, 1);
     --meteor-to: transparent;
   }
 
