@@ -1,13 +1,14 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 
 const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "hero" },
+  { name: "About", href: "about" },
+  { name: "Skills", href: "skills" },
+  { name: "Projects", href: "projects" },
+  { name: "Contact", href: "contact" },
 ];
 
 export const Navbar = () => {
@@ -31,30 +32,23 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a
-          className="text-xl font-bold text-primary flex items-center hover:text-foreground transition-colors duration-300"
-          href="#hero"
-        >
-          <span className="relative z-10 ">
-            <span className="text-glow text-foreground hover:text-primary transition-colors duration-300">
-              purgalo
-            </span>{" "}
-            <span className="hover:text-foreground transition-colors duration-300">
-              Portfolio
+        <Link to="hero" smooth={true} duration={500} className="text-xl font-bold text-primary flex items-center hover:text-foreground transition-colors duration-300">
+            <span className="relative z-10 space-x-1 cursor-pointer">
+              <span className="text-glow text-foreground hover:text-primary transition-colors duration-300">
+                Bálint
+              </span>
+              <span className="hover:text-foreground transition-colors duration-300">
+                Portfolio
+              </span>
             </span>
-          </span>
-        </a>
+        </Link>
 
         {/* desktop nav */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
-            <a
-              key={key}
-              href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300"
-            >
-              {item.name}
-            </a>
+            <Link to={item.href} smooth={true} duration={500} key={key} className="text-foreground/80 hover:text-primary transition-colors duration-300 cursor-pointer" >
+                {item.name}
+            </Link>
           ))}
         </div>
         {/* mobile nav */}
