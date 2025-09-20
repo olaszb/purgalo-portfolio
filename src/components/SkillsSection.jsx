@@ -34,7 +34,7 @@ const categories = ["all", "frontend", "backend", "tools", "languages"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
-  const filteredSkills = skills.filter(
+  const filteredSkills = (skills || []).filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory
   );
 
