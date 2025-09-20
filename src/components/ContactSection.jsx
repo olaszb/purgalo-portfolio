@@ -16,9 +16,27 @@ export const ContactSection = () => {
     const {toast} = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        const formData = new FormData(e.target);
+
+        formData.append("access_key", "d9edc949-5e3c-4758-a195-14d9110464d9");
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body:json
+        }).then((res) => res.json());
+
+        if (res.success){
+            console.log("Success", res);
+        }
 
         setTimeout(() => {
             toast({
