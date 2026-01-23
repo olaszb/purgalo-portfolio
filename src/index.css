@@ -71,28 +71,9 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
-
-    --card: 0 0% 100%;
-
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
-
-    --border: 214 32% 91%;
-
-    /* --star: 295 100 23%; */
-    --star: 222 60% 25%;
-    --star-shadow: rgba(26, 48, 102, 1);
-    /* --star-shadow: rgba(108, 0, 117, 1); */
-
     
-    --meteor-from: rgba(26, 48, 102, 1);
-    --meteor-via: rgba(26, 48, 102, 1);
-    --meteor-to: transparent;
-  }
 
-  .dark {
+
     --background: 222 47% 4%;
     /* --background: 295 47% 10%; */
 
@@ -110,6 +91,28 @@
 
     --meteor-from: white;
     --meteor-via: white;
+    --meteor-to: transparent;
+}
+
+  .dark {
+    --background: 350 30% 98%; 
+    --foreground: 350 50% 15%;
+
+    --card: 0 0% 100%;
+
+    /* Strong Crimson for UI elements like buttons/links */
+    --primary: 350 80% 45%;
+    --primary-foreground: 350 10% 98%;
+
+    --border: 350 20% 90%;
+
+    /* Stars: A deep, rich ruby */
+    --star: 350 90% 35%;
+    --star-shadow: rgba(153, 27, 27, 0.2);
+
+    /* Meteors: From a vivid red to a soft pinkish-red fade */
+    --meteor-from: rgba(190, 18, 60, 1);  /* Crimson Red */
+    --meteor-via: rgba(225, 29, 72, 0.5);  /* Rose Red */
     --meteor-to: transparent;
   }
 
@@ -168,7 +171,7 @@
 @utility cosmic-button {
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 
     /* hover:shadow-[0_0_10px_rgba(139, 92, 246, 0.5)] */
-    hover:shadow-lg hover:shadow-purple-500/50
+    hover:shadow-lg hover:shadow-primary/50
      hover:scale-105 active:scale-95;
 }
 

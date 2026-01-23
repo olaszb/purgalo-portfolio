@@ -13,13 +13,22 @@ const projects = [
   },
   {
     id: 2,
-    title: "Portfolio",
-    description: "A cosmic portfolio using React and TailwindCSS",
-    image: "/projects/portfolio.png",
-    tags: ["React", "JavaScript", "TailwindCSS"],
+    title: "Medium Clone",
+    description: "A clone of Medium.com built with Laravel and TailwindCSS.",
+    image: "/projects/medium-clone.png",
+    tags: ["Laravel", "TailwindCSS"],
     demoUrl: "#",
-    githubUrl: "https://github.com/olaszb/purgalo-portfolio",
+    githubUrl: "https://github.com/olaszb/medium-clone",
   },
+  {
+    id: 3,
+    title: "Developer Blog",
+    description: "A developer blog made with Laravel and Angular using an integrated markdown editor.",
+    image: "/projects/fullstack-blog.png",
+    tags: ["Laravel", "Angular", "TailwindCSS"],
+    demoUrl: "",
+    githubUrl: "https://github.com/olaszb/fullstack-blog",
+  }
 ];
 
 export const ProjectsSection = () => {
@@ -68,6 +77,7 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3 p-3">
+                    {project.demoUrl && (
                     <a
                       href={project.demoUrl}
                       target="_blank"
@@ -75,6 +85,7 @@ export const ProjectsSection = () => {
                     >
                       <ExternalLink size={20} />
                     </a>
+                    )}
                     <a
                       href={project.githubUrl}
                       target="_blank"
