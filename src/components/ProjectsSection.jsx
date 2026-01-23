@@ -17,7 +17,7 @@ const projects = [
     description: "A clone of Medium.com built with Laravel and TailwindCSS.",
     image: "/projects/medium-clone.png",
     tags: ["Laravel", "TailwindCSS"],
-    demoUrl: "#",
+    demoUrl: "",
     githubUrl: "https://github.com/olaszb/medium-clone",
   },
   {
