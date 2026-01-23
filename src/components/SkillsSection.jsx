@@ -4,30 +4,30 @@ import { Element } from "react-scroll";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 80, category: "frontend" },
+  { name: "HTML/CSS", level: 90, category: "frontend" },
   { name: "JavaScript", level: 80, category: "frontend" },
   { name: "React", level: 80, category: "frontend" },
-  { name: "Tailwind CSS", level: 70, category: "frontend" },
-  { name: "TypeScript", level: 50, category: "frontend" },
-  { name: "Next.js", level: 50, category: "frontend" },
-  { name: "Angular", level: 0, category: "frontend" },
+  { name: "Tailwind CSS", level: 90, category: "frontend" },
+  { name: "TypeScript", level: 60, category: "frontend" },
+  { name: "Next.js", level: 70, category: "frontend" },
+  { name: "Angular", level: 60, category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 0, category: "backend" },
-  { name: "MongoDB", level: 0, category: "backend" },
-  { name: "Supabase", level: 0, category: "backend" },
-  { name: "Laravel", level: 50, category: "backend" },
+  { name: "Node.js", level: 70, category: "backend" },
+  { name: "MongoDB", level: 60, category: "backend" },
+  { name: "Supabase", level: 60, category: "backend" },
+  { name: "Laravel", level: 90, category: "backend" },
 
   // Tools
   { name: "Git/Github", level: 70, category: "tools" },
   { name: "VS Code", level: 80, category: "tools" },
-  { name: "Docker", level: 0, category: "tools" },
+  { name: "Docker", level: 70, category: "tools" },
 
   // Languages
-  { name: "Java", level: 60, category: "languages" },
-  { name: "Python", level: 60, category: "languages" },
-  { name: "C", level: 50, category: "languages" },
-  { name: "C#", level: 50, category: "languages" },
+  { name: "Java", level: 80, category: "languages" },
+  { name: "Python", level: 80, category: "languages" },
+  { name: "C", level: 60, category: "languages" },
+  { name: "C#", level: 70, category: "languages" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools", "languages"];
