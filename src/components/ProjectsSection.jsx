@@ -13,12 +13,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Portfolio",
-    description: "A cosmic portfolio using React and TailwindCSS",
-    image: "/projects/portfolio.png",
-    tags: ["React", "JavaScript", "TailwindCSS"],
+    title: "Medium Clone",
+    description: "A clone of Medium.com built with Laravel and TailwindCSS.",
+    image: "/projects/medium-clone.png",
+    tags: ["Laravel", "TailwindCSS"],
     demoUrl: "#",
-    githubUrl: "https://github.com/olaszb/purgalo-portfolio",
+    githubUrl: "https://github.com/olaszb/medium-clone",
   },
   {
     id: 3,
