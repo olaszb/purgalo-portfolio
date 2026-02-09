@@ -17,7 +17,7 @@ export const AboutSection = () => {
               </h3>
 
               <p className="text-muted-foreground">
-                Currently in my 5th semester of CS, I have spent my academic career mastering the full web stack. I am equally comfortable building intuitive front-end interfaces as I am developing efficient back-end systems, always prioritizing accessibility and modern standards.
+                Currently in my 6th semester of CS, I have spent my academic career mastering the full web stack. I am equally comfortable building intuitive front-end interfaces as I am developing efficient back-end systems, always prioritizing accessibility and modern standards.
               </p>
               <p className="text-muted-foreground">
                 I am a lifelong learner currently transitioning into Data Science for my Master’s. I am passionate about using data to build smarter web solutions and am constantly seeking new challenges that push my technical boundaries.
