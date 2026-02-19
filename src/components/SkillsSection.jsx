@@ -29,6 +29,7 @@ const skills = [
   { name: "Python", level: 80, category: "languages" },
   { name: "C", level: 60, category: "languages" },
   { name: "C#", level: 70, category: "languages" },
+  { name: "SQL", level: 70, category: "languages" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools", "languages"];
